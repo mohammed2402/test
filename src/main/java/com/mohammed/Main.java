@@ -6,6 +6,7 @@ import com.mohammed.Cache.Storage.HashMapStorage;
 
 public class Main {
     public static void main (String args[]){
+        //Adding comment
         Cache<Integer,Integer> cache= new Cache();
         cache.setStorage(new HashMapStorage<>(2));
         cache.setCachingPolicy(new LRUEvictionPolicy<>());
